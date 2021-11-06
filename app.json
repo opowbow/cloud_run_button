@@ -1,6 +1,7 @@
 {
+    "name": "op-cr-button",
     "options": {
-        "allow-unauthenticated": false,
-    }
+        "allow-unauthenticated": false
+    },
     
 }
