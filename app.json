@@ -1,7 +1,55 @@
 {
-    "name": "op-cr-button",
-    "options": {
-        "allow-unauthenticated": false
+    "name": "foo-app",
+    "env": {
+        "BACKGROUND_COLOR": {
+            "description": "red",
+            "value": "#fefefe",
+            "required": false
+        },
+        "TITLE": {
+            "description": "OPtitle"
+        },
+        "APP_SECRET": {
+            "generator": "secret"
+        },
+        "ORDERED_ENV": {
+            "description": "control the order env variables are prompted",
+            "order": 100
+        }
     },
-    
+    "options": {
+        "allow-unauthenticated": false,
+        "memory": "512Mi",
+        "cpu": "1",
+        "port": 80,
+        "http2": false
+    },
+    "build": {
+        "skip": false,
+        "buildpacks": {
+            "builder": ""
+        }
+    },
+    "hooks": {
+        "prebuild": {
+            "commands": [
+                ""
+            ]
+        },
+        "postbuild": {
+            "commands": [
+                ""
+            ]
+        },
+        "precreate": {
+            "commands": [
+                "echo 'test'"
+            ]
+        },
+        "postcreate": {
+            "commands": [
+                ""
+            ]
+        }
+    }
 }
