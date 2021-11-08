@@ -1,5 +1,5 @@
 {
-    "name": "foo-app",
+    "name": "cloud-run-button",
     "env": {
         "BACKGROUND_COLOR": {
             "description": "red",
