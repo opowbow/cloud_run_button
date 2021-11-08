@@ -8,6 +8,7 @@
         },
         "TITLE": {
             "description": "OPtitle"
+            "required": false
         },
         "APP_SECRET": {
             "generator": "secret"
@@ -15,10 +16,11 @@
         "ORDERED_ENV": {
             "description": "control the order env variables are prompted",
             "order": 100
+            "required": false
         }
     },
     "options": {
-        "allow-unauthenticated": false,
+        "allow-unauthenticated": true,
         "memory": "512Mi",
         "cpu": "1",
         "port": 80,
