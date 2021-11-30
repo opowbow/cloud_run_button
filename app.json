@@ -3,7 +3,7 @@
     "env": {
         "BACKGROUND_COLOR": {
             "description": "red",
-            "value": "#fefefe",
+            "value": "#CD5C5C",
             "required": false
         },
         "TITLE": {
